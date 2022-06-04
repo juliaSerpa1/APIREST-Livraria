@@ -18,7 +18,7 @@ const DB_PASSWORD = encodeURIComponent(process.env.DB_PASSWORD)
 
 mongoose
     .connect(
-        "mongodb+srv://julia:123password@apicluster.coitp.mongodb.net/Node?retryWrites=true&w=majority"
+        "mongodb+srv://DB_USER:DB_PASSWORD@apicluster.coitp.mongodb.net/Node?retryWrites=true&w=majority"
     )
     .then(()=>{
         console.log("conectamos ao mongo!")
